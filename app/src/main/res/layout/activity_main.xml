@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.galvezagb50.trabajoficheros.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txvImagenes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagenes:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtUrlImagenes"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="http://alumno.mobi/~alumno/superior/galvez/direcciones.txt" />/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txvFrases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frases:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtUrlFrases"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="http://alumno.mobi/~alumno/superior/galvez/frases.txt" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDescargar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descargar" />
+
+    <ImageView
+        android:id="@+id/imgImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txvFrase"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/txvFrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp" />
+
+</LinearLayout>
